@@ -1,0 +1,26 @@
+{
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "name": "postfriday/castable",
+    "description": "Castable – Flexible Attribute-Based Data Casting for PHP",
+    "version": "0.0.1",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Postfriday\\Castable\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stanislav Surskiy",
+            "email": "ssurskiy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    }
+}
