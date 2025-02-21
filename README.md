@@ -1,23 +1,23 @@
 # Castable – Flexible Attribute-Based Data Casting for PHP
 Castable is a lightweight and extensible PHP library that enables seamless attribute-based data transformation and casting. Designed for modern PHP applications, it allows you to define custom casters via attributes in constructor arguments, ensuring precise and automatic data formatting.
 
-Features
-✅ Attribute-Based Casting – Define how your properties should be formatted directly in the constructor using PHP attributes.
-✅ Extensible Casters – Easily create and register custom casters for different data types.
-✅ Seamless Object to Array Conversion – Automatically apply transformations when converting objects to arrays.
-✅ Support for DateTime, Boolean, Enum, and Custom Formats – Flexible handling of various data types.
-✅ PSR-Friendly & Framework-Agnostic – Works with any PHP project, including Laravel, Symfony, and standalone applications.
+## Features
+- ✅ Attribute-Based Casting – Define how your properties should be formatted directly in the constructor using PHP attributes.
+- ✅ Extensible Casters – Easily create and register custom casters for different data types.
+- ✅ Seamless Object to Array Conversion – Automatically apply transformations when converting objects to arrays.
+- ✅ Support for DateTime, Boolean, Enum, and Custom Formats – Flexible handling of various data types.
+- ✅ PSR-Friendly & Framework-Agnostic – Works with any PHP project, including Laravel, Symfony, and standalone applications.
 
 ## Example Usage
 ```php
-use Castable\Traits\Castable;
-use Castable\Attributes\CastWith;
-use Castable\Casters\DateTimeCaster;
-use Castable\Casters\BooleanCaster;
+use Postfriday\Castable\Traits\ToArray;
+use Postfriday\Castable\Attributes\CastWith;
+use Postfriday\Castable\Casters\DateTimeCaster;
+use Postfriday\Castable\Casters\BooleanCaster;
 
 class Example
 {
-    use Castable;
+    use ToArray;
 
     public DateTimeInterface $createdAt;
     public DateTimeInterface $updatedAt;
