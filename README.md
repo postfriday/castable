@@ -10,14 +10,14 @@ Features
 
 ## Example Usage
 ```php
-use Castable\Traits\ToArray;
+use Castable\Traits\Castable;
 use Castable\Attributes\CastWith;
 use Castable\Casters\DateTimeCaster;
 use Castable\Casters\BooleanCaster;
 
 class Example
 {
-use ToArray;
+    use Castable;
 
     public DateTimeInterface $createdAt;
     public DateTimeInterface $updatedAt;
@@ -40,9 +40,9 @@ use ToArray;
 }
 
 $example = new Example(
-new \DateTime('2024-02-21 12:00:00'),
-new \DateTime('2025-02-21 18:30:00'),
-true
+    new \DateTime('2024-02-21 12:00:00'),
+    new \DateTime('2025-02-21 18:30:00'),
+    true
 );
 
 print_r($example->toArray());
