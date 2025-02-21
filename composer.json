@@ -14,6 +14,11 @@
             "Postfriday\\Castable\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Postfriday\\Castable\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Stanislav Surskiy",
