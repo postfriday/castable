@@ -2,6 +2,9 @@
 
 namespace Postfriday\Castable\Attributes;
 
+use Attribute;
+
+#[Attribute]
 class CastWith
 {
     /**
